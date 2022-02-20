@@ -1,1 +1,83 @@
+<body>
+<marquee>Released in 2022 and is best experienced with 96D glasses :)</marquee>
+<title>Zombie Apocalypse</title>
+<style>
+    body{
 
+background-color:rgb(88, 88, 88);
+
+    }
+    img{
+       
+       
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+    }
+    .button {
+      display: inline-block;
+      border-radius: 5px;
+      background-color: #f4511e;
+      border: 2px   ;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
+      width: 350px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+  position: absolute;
+  top: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+    
+
+    <button onclick="pressed()" class="button" style="vertical-align:middle"><span> Start</span></button>
+    <img style="width:1648px; height:927px;" class="title" src="Untitled.png"></img>
+
+    <script>
+function pressed();{
+
+    location.href = "game.html";
+
+}
+
+    </script>
+
+    </body>
+    
